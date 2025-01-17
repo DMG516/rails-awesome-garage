@@ -1,0 +1,11 @@
+<h1>Cars</h1>
+<ul>
+<% @cars.each do |car|%>
+  <%= link_to car_path(car) do %>
+  <li>
+    <%= car.brand %>
+  </li>
+  <% end %>
+<% end %>
+</ul>
+<p><%= link_to "Your Garage", favourites_path %></p>
